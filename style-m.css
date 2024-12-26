@@ -1,0 +1,132 @@
+.menu{
+    top: 30px;
+    right: 30px;
+    border-radius: 7px; 
+}
+
+.menu-button{
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px; 
+}
+
+.menu-content{
+    gap:7px;      
+    padding-top: 15px ;
+}
+
+.menu-item{
+    width: 225px;
+    padding-bottom: 25px;
+}
+
+.menu a{
+    padding: 15px;
+    font-size: 24px;
+}
+
+.slot_machine_top
+{
+    margin-top: 75px;
+    width: 250px;
+    height: 35px;
+
+    border-left: 6px solid rgb(178, 155, 37);
+    border-right: 6px solid rgb(178, 155, 37);
+    border-top: 6px solid rgb(178, 155, 37);
+}
+
+.slot_machine{
+    border-radius: 30px;
+    padding: 30px 30px 0px 30px;
+    border: 6px solid rgb(178, 155, 37);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulbs{
+    gap:12px;
+}
+
+.bulb{
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(178, 155, 37);
+}
+
+.slot_machine_items{   
+    margin: 15px 15px 0px 15px;
+    gap:7px;
+}   
+
+.food_image_container{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 6px solid rgb(178, 155, 37);
+}
+
+.food_name_container{
+    width: 100px;
+    height: 30px;
+    padding: 0px 15px;
+    margin: 7px 0px;
+
+    border: 6px solid rgb(178, 155, 37);
+    border-radius: 15px;
+}
+
+.food-name{
+    font-size: 16px;
+}
+
+.background_effect{     
+    width: 650px;
+    height: 650px; 
+}
+
+.slot_machine_bottom{      
+    width: 600px;
+    height: 110px;
+    border-radius: 0 0 15px 15px;
+    border: 6px solid rgb(161, 153, 106);
+}
+
+.Lottery-button{
+    width: 80px;
+    height: 80px;   
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nutritional_info{
+    margin-top: 35px;
+    grid-template-columns: repeat(5, 1fr); 
+    gap:15px;
+}
+
+.ni_item{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px 0px;
+    gap:5px; 
+    border: 3px solid rgb(173, 167, 136);
+    border-radius: 8px;
+}
+
+.ni-title{
+    font-size: 20px;
+}
+
+.ni-value{
+    font-size: 16px;
+}
+
+.manual-content-text {
+    margin: 0px 40px;
+}

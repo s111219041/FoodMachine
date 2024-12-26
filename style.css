@@ -1,0 +1,1063 @@
+
+/*通用變數*/
+:root { 
+    --border-color: rgb(81, 63, 63); /* 定義邊框顏色 */
+    --text-color: rgb(89, 56, 56);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(28, 28, 42);
+}
+
+/*菜單*/
+
+.menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: rgb(244, 237, 207);
+    border-radius: 10px; 
+    z-index: 5;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-button{
+    top: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(244, 237, 207);
+    border-radius: 10px; 
+    
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button-image{
+    width: 80%;
+    height: 80%;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    
+    padding-top: 20px ;
+    display: none;  
+}
+
+.menu-item{
+    width: 180px;
+    padding-bottom: 10px;
+}
+
+.menu a{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 20px;
+    font-size: 20px;
+
+    text-decoration: none; /* 移除預設的底線 */
+    color: var(--text-color) ;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: rgb(139, 120, 58) ;
+}
+
+/*拉霸機*/
+
+.slot_machine_top{
+
+    margin-top: 40px;
+    background-color: rgb(246, 159, 118);
+    width: 500px;
+    height: 90px;
+    border-radius: 30% 30% 0 0;
+
+    display: flex;
+    justify-content: center; /* 將元素置中 */
+    align-items: center; /* 使圖片垂直置中 */
+
+    border: 4px solid var(--border-color);
+    border-bottom: none;
+}
+
+.top-info-content{
+    width: 300px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;  /* 垂直排列 */
+    justify-content: center;  /* 垂直方向居中 */
+    align-items: center;      /* 水平方向居中 */
+
+    border-radius: 5px; 
+    background-color: rgb(239, 222, 156);
+    border: 3px solid var(--border-color);
+}
+
+.reward-total-coin-text{
+    font-size : 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.current_global_spin_counter_text{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.slot_machine{
+    background:linear-gradient(to bottom, rgb(246, 161, 118) 90%, rgb(230, 140, 95) 90%);
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
+    border: 4px solid var(--border-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulbs{
+    display: flex;
+    gap:20px
+}
+
+.bulb{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 232, 119);
+    border-radius: 50%;
+    transition:  background-color 0.1s ease; 
+
+    border: 3px solid var(--border-color);
+}
+
+.slot_machine_items{   
+    display: flex;
+
+    margin: 20px 20px 10px 20px;
+    gap:15px;
+}
+
+.sm_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food_tags_container{
+    width: 150px;
+    height: 50px;
+    padding: 0px 20px;
+    margin: 0px 0px;
+    background-color: rgb(255, 225, 105);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.food-tags{
+    font-size: 18px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0px var(--border-color);
+}
+
+
+.food_image_container{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    /*background: radial-gradient(circle, rgb(255, 234, 152), rgb(248, 237, 197));*/
+    background-color: rgb(255, 236, 159);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border: 4px solid var(--border-color);
+    transition: border-color 0.25s ease; 
+}
+
+.food-image {
+    width:  80%;
+    height: 80%;
+    object-fit: cover; 
+
+    transition: filter 1s ease , width 0.2s ease, height 0.2s ease;
+}
+
+.food_name_container{
+    width: 150px;
+    height: 40px;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 225, 105);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border: 4px solid var(--border-color);
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.food-name{
+    font-weight: bold;
+    font-size: 20px;
+    color:var(--border-color);
+}
+
+.background-effects{
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 400px; 
+}
+
+.background_effect{
+    position: absolute;
+    opacity: 1;
+    
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+
+    border-radius: 50%;
+    background: transparent;
+
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image{
+    width: 90%;
+    height: 90%;
+
+    opacity: 0.7;
+    filter: blur(50px);
+}
+
+.background_effect:nth-child(1) {
+    left: 20%;
+    transform: translateX(-50%)
+  }
+
+  .background_effect:nth-child(2) {
+    left: 35%;
+    transform: translateX(-50%)
+  }
+
+  .background_effect:nth-child(3) {
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  .background_effect:nth-child(4) {
+    left: 65%;
+    transform: translateX(-50%)
+  }
+
+  .background_effect:nth-child(5) {
+    left: 80%;
+    transform: translateX(-50%)
+  }
+
+.slot_machine_bottom{
+    background:linear-gradient(to bottom, rgb(234, 194, 99) 80%, rgb(225, 186, 97) 80%);
+    
+    width: 1000px;
+    height: 130px;
+    border-radius: 0 0 20px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid var(--border-color);
+    border-top: none;
+    position: relative;
+}
+
+.current_coin_container{
+    position: absolute;
+    left : 25%;
+    transform: translateX(-50%);
+
+    width: 150px;
+    height: 35px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    border-radius: 5px; 
+    background-color: rgb(239, 222, 156);
+
+    border: 3px solid var(--border-color);
+}
+
+.current-coin{
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 24px;
+    margin:0px 10px;
+}
+
+.Lottery-button{
+    position: absolute;
+    background:linear-gradient(to bottom left, rgb(255, 72, 72), rgb(187, 61, 61));
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.2);
+    
+    border: none;
+    cursor: pointer;
+}
+
+.buttonImage {
+    width: 80%;
+    height: 80%;
+  }
+
+/*營養價值*/
+.nutritional_info{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap:10px
+}
+
+.ni_item{
+    background-color: rgb(244, 237, 207);
+    background:linear-gradient(to bottom, rgb(243, 233, 192) 15%, rgb(243, 233, 192) 15%);
+    width: 200px;
+    height: 70px;
+    margin: 10px;
+    padding: 5px 0px;
+    gap:10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.ni_item p {
+    margin: 0;
+}
+
+.ni-title{
+    font-weight: bold;
+    font-size: 24px;
+    color:var(--text-color);
+    /*border-bottom : 2px dotted rgba(0, 0, 0, 0.2);*/
+}
+
+.ni-value{
+    font-weight: bold;
+    font-size: 20px;
+    color:var(--text-color);
+}
+
+
+/*彈出視窗*/
+.manual{
+    display: none;  
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.popup-background {
+    width: 50%;
+    height: 90%;
+    text-align: center;
+
+    background-color: rgb(244, 237, 207);
+    border-radius: 20px;
+
+    position: relative;
+}   
+
+.leaderboard_content{
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平置中 */
+}
+
+.manual-close-botton , .leaderboard-close-botton{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top:25px;
+    right:25px;
+}
+
+.manual-content-title , .leaderboard-content-title{
+    font-weight: bold;
+    font-size: 24px;
+    color:var(--text-color);
+    text-align: center;
+}
+
+.manual-content-text , .leaderboard-content-text{
+    margin: 0px 80px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.8;
+    color:var(--text-color);
+}
+
+/* 排行榜 */
+.leaderboard{
+    display: none;  
+}
+
+/*表格*/
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 0;
+}
+th, td {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 60px;
+    text-align: right;
+    color : var(--text-color);
+    white-space: nowrap; /* 確保文字不換行 */
+}
+th {
+    font-weight: bold;
+    background-color: #ffd17c;
+    color : var(--text-color);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(232, 225, 198);
+}
+
+/*名字輸入框*/
+
+.ID-input-background{
+    width: 40%;
+    height: 30%;
+    text-align: center;
+
+    background-color: rgb(244, 237, 207);
+    border-radius: 20px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ID-input-background p{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 0;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+input[type="text"] {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--border-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.ID-input-down-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 5%; 
+    background-color: rgba(255, 72, 72, 0);
+    border: none;  /* 確保沒有邊框 */
+}
+
+.ID-input-down-button img{
+    width: 100%;
+    height: 100%;
+}
+
+/*RWD*/
+
+/*S*/
+@media (max-width: 768px) {
+
+    .menu{
+        top: 20px;
+        right: 20px;
+        border-radius: 5px; 
+        z-index: 5;
+        box-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu-button{
+        top: 30px;
+        right: 30px;
+        width: 52.5px;
+        height: 52.5px;
+        border-radius: 5px; 
+    }
+    
+    .menu-content{
+        gap:25px;
+        padding-top: 10px ;
+    }
+    
+    .menu-item{
+        width: 140px;
+        padding-bottom: 10px;
+    }
+    
+    .menu a{
+        padding: 0px 10px;
+        font-size: 16px;
+    }
+
+    /**/
+
+    .slot_machine_top
+    {
+        margin-top: 20px;
+        width: 250px;
+        height: 45px;
+    
+        border: 2px solid var(--border-color);
+        border-bottom: none;
+    }
+
+    .top-info-content{
+        width: 150px;
+        height: 30px;
+    
+        border-radius: 2.5px; 
+        border: 1.5px solid var(--border-color);
+    }
+
+    .reward-total-coin-text{
+        font-size : 10px;
+        margin-bottom: 2px;
+    }
+    
+    .current_global_spin_counter_text{
+        font-size: 10px;
+    }
+    
+    .slot_machine{
+        border-radius: 10px;
+        padding: 10px 10px 0px 10px;
+        border: 2px solid var(--border-color);
+    }
+    
+    .bulbs{
+        gap:10px;
+    }
+    
+    .bulb{
+        width: 10px;
+        height: 10px;
+        border: 1.5px solid var(--border-color);
+    }
+    
+    .slot_machine_items{   
+        margin: 10px 10px 5px 10px;
+        gap:5px;
+    }   
+
+    .food_tags_container{
+        width: 75px;
+        height: 25px;
+        padding: 0px 10px;
+
+        border: 2px solid var(--border-color);
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .food-tags{
+        font-size: 10px;
+        line-height: 1.2;
+        text-shadow: 1px 1px 0px var(--border-color);
+    }
+    
+    .food_image_container{
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+        border: 2px solid var(--border-color);
+    }
+
+    .food_name_container{
+        width: 75px;
+        height: 20px;
+        padding: 0px 10px;
+        margin-bottom: 5px;
+    
+        border: 2px solid var(--border-color);
+        border-top: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .food-name{
+        font-size: 12px;
+    }
+
+    .background-effects{
+        width: 100%; 
+        height: 200px; 
+    }
+    
+    .background_effect{             
+        width: 350px;
+        height: 350px; 
+    }
+
+    .slot_machine_bottom{      
+        width: 500px;
+        height: 65px;
+        border-radius: 0 0 10px 10px;
+        border: 2px solid var(--border-color);
+        border-top: none;
+    }
+
+    .current_coin_container{  
+        width: 75px;
+        height: 17.5px;
+        border-radius: 2.5px; 
+    
+        border: 1.5px solid var(--border-color);
+    }
+    
+    .current-coin{
+        font-size: 14px;
+        margin:0px 10px;
+    }
+
+    .Lottery-button{
+        border-radius: 50%; 
+        width: 50px;
+        height: 50px;   
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .nutritional_info{
+        margin-top: 25px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:10px;
+    }
+    
+    .ni_item{
+        width: 160px;
+        height: 45px;
+        margin: 10px;
+        padding: 5px 0px;
+        gap:5px; 
+        border-radius: 5px;
+    }
+
+    .ni-title{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .ni-value{
+        font-size: 14px;
+    }
+    
+    .popup-background {
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+    }   
+    
+    .manual-close-botton , .leaderboard-close-botton{ 
+        width: 40px;
+        height: 40px;
+        top:25px;
+        right:25px;
+    }
+    
+    .manual-content-title , .leaderboard-content-title{
+        font-size: 20px;
+    }
+    
+    .manual-content-text , .leaderboard-content-text{
+        margin: 0px 40px;
+        font-size: 10px;
+    }
+    /*表格*/
+    table {
+        margin: 10px 0;
+    }
+    th, td {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 7.5px 30px;
+    }
+
+    /*名字輸入框*/
+
+    .ID-input-background{
+        width: 70%;
+        height: 20%;
+        border-radius: 10px;
+        gap: 7.5px;
+    }
+
+    .ID-input-background p{
+        font-size: 16px;
+    }
+
+    .input-field{
+        gap:10px;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 2.5px;
+    }
+
+    .ID-input-down-button{
+        width:40px;
+        height: 40px;
+        border-radius: 2.5%; 
+    }
+    
+}
+
+/*M*/
+@media (max-width: 1024px) and (min-width: 769px) {
+    .menu{
+        top: 30px;
+        right: 30px;
+        border-radius: 7.5px; 
+        z-index: 5;
+        box-shadow: 3.75px 3.75px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu-button{
+        top: 30px;
+        right: 30px;
+        width: 52.5px;
+        height: 52.5px;
+        border-radius: 7.5px; 
+    }
+    
+    .menu-content{
+        gap:37.5px;
+        padding-top: 15px ;
+    }
+    
+    .menu-item{
+        width: 180px;
+        padding-bottom: 7.5px;
+    }
+    
+    .menu a{
+        padding: 0px 15px;
+        font-size: 18px;
+    }
+
+    .slot_machine_top
+    {
+        margin-top: 20px;
+        width: 375px;
+        height: 67.5px;
+    
+        border: 3px solid var(--border-color);
+        border-bottom: none;
+    }
+
+    .top-info-content{
+        width: 225px;
+        height: 45px;
+    
+        border-radius: 3.75px; 
+        border: 2.25px solid var(--border-color);
+    }
+
+    .reward-total-coin-text{
+        font-size : 16px;
+        margin-bottom: 3px;
+    }
+    
+    .current_global_spin_counter_text{
+        font-size: 16px;
+    }
+    
+    .slot_machine{
+        border-radius: 15px;
+        padding: 15px 15px 0px 15px;
+        border: 3px solid var(--border-color);
+    }
+    
+    .bulbs{
+        gap:15px;
+    }
+    
+    .bulb{
+        width: 15px;
+        height: 15px;
+        border: 2.25px solid var(--border-color);
+    }
+    
+    .slot_machine_items{   
+        margin: 15px 15px 7.5px 15px;
+        gap:7.5px;
+    }   
+
+    .food_tags_container{
+        width: 112.5px;
+        height: 37.5px;
+        padding: 0px 15px;
+
+        border: 3px solid var(--border-color);
+        border-bottom: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .food-tags{
+        font-size: 15px;
+        line-height: 1.2;
+        text-shadow: 1.5px 1.5px 0px var(--border-color);
+    }
+    
+    .food_image_container{
+        width: 112.5px;
+        height: 112.5px;
+        padding: 15px;
+        border: 3px solid var(--border-color);
+    }
+
+    .food_name_container{
+        width: 112.5px;
+        height: 30px;
+        padding: 0px 15px;
+        margin-bottom: 7.5px;
+    
+        border: 3px solid var(--border-color);
+        border-top: none;
+        border-radius: 0px 0px 15px 10px;
+    }
+    
+    .food-name{
+        font-size: 16px;
+    }
+
+    .background-effects{ 
+        height: 300px; 
+    }
+    
+    .background_effect{             
+        width: 525px;
+        height: 525px; 
+    }
+
+    .slot_machine_bottom{      
+        width: 750px;
+        height: 97.5px;
+        border-radius: 0 0 15px 15px;
+        border: 3px solid var(--border-color);
+        border-top: none;
+    }
+
+    .current_coin_container{  
+        width: 112.5px;
+        height: 26.25px;
+        border-radius: 3.75px; 
+    
+        border: 2.25px solid var(--border-color);
+    }
+    
+    .current-coin{
+        font-size: 18px;
+        margin:0px 15px;
+    }
+
+    .Lottery-button{
+        width: 75px;
+        height: 75px;   
+        box-shadow: 0px 7.5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .nutritional_info{
+        margin-top: 25px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:10px;
+    }
+
+    .popup-background {
+        width: 80%;
+        height: 90%;
+        border-radius: 15px;
+    }   
+    
+    .manual_background {
+        width: 80%;
+        height: 90%;
+
+        border: 8px solid rgb(173, 167, 136);
+        border-radius: 15px;
+    }   
+    
+    .manual-close-botton{  
+        width: 45px;
+        height: 45px;
+    
+        top:25px;
+        right:25px;
+    }
+    
+    .manual-content-title{
+        font-size: 24px;
+    }
+    
+    .manual-content-text {
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /*營養價值*/
+
+    .nutritional_info{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap:15px
+    }
+
+    .ni_item{
+        width: 150px;
+        height: 52.5px;
+        margin: 7.5px;
+        padding: 3.75px 0px;
+        gap:7.5px;
+
+        border-radius: 7.5px;
+    }
+
+    .ni-title{
+        font-size: 20px;
+    }
+
+    .ni-value{
+        font-size: 16px;
+        color:var(--text-color);
+    }
+
+    /*表格*/
+    table {
+        margin: 15px 0;
+    }
+    th, td {
+        font-size: 16px;
+        padding: 11.25px 45px;
+    }
+
+    /*名字輸入框*/
+
+    .ID-input-background{
+        width: 50%;
+        height: 30%;
+        border-radius: 15px;
+        gap: 11.25px;
+    }
+
+    .ID-input-background p{
+        font-size: 20px;
+    }
+
+    .input-field{
+        gap:15px;
+    }
+
+    input[type="text"] {
+        padding: 7.5px;
+        font-size: 16px;
+        border-radius: 3.75px;
+    }
+
+    .ID-input-down-button{
+        width:50px;
+        height: 50px;
+        border-radius: 3.75%; 
+    }
+}
+
+p {
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Heiti TC", "Source Han Sans", Arial, Helvetica, sans-serif;
+}

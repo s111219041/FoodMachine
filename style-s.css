@@ -1,0 +1,164 @@
+.menu{
+        top: 20px;
+        right: 20px;
+        border-radius: 5px; 
+    }
+    
+    .menu-button{
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px; 
+    }
+
+    .menu-content{
+        gap:5px;      
+        padding-top: 10px ;
+    }
+    
+    .menu-item{
+        width: 150px;
+        padding-bottom: 15px;
+    }
+
+    .menu a{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .slot_machine_top
+    {
+        margin-top: 50px;
+        width: 175px;
+        height: 25px;
+        border-radius: 50% 50% 0 0;
+    
+        border-left: 4px solid rgb(178, 155, 37);
+        border-right: 4px solid rgb(178, 155, 37);
+        border-top: 4px solid rgb(178, 155, 37);
+    }
+    
+    .slot_machine{
+        border-radius: 20px;
+        padding: 20px 20px 0px 20px;
+        border: 4px solid rgb(178, 155, 37);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bulbs{
+        gap:5px;
+    }
+    
+    .bulb{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;  
+        border: 2px solid rgb(178, 155, 37);
+    }
+    
+    .slot_machine_items{   
+        margin: 10px 10px 0px 10px;
+        gap:5px;
+    }   
+    
+    .food_image_container{
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 4px solid rgb(178, 155, 37);
+    }
+
+    .food_name_container{
+        width: 60px;
+        height: 20px;
+        padding: 0px 10px;
+        margin: 5px 0px;
+    
+        border: 4px solid rgb(178, 155, 37);
+        border-radius: 10px;
+    }
+    
+    .food-name{
+        font-size: 12px;
+    }
+
+    .background-effects{
+        width: 100%; 
+        height: 200px; 
+    }
+    
+    .background_effect{             
+        width: 350px;
+        height: 350px; 
+    }
+
+    .slot_machine_bottom{      
+        width: 400px;
+        height: 70px;
+        border-radius: 0 0 10px 10px;
+        border: 4px solid rgb(161, 153, 106);
+    }
+
+    .Lottery-button{
+        border-radius: 50%; 
+        width: 60px;
+        height: 60px;   
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .nutritional_info{
+        margin-top: 25px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:10px;
+    }
+    
+    .ni_item{
+        width: 160px;
+        height: 45px;
+        margin: 10px;
+        padding: 5px 0px;
+        gap:5px; 
+        border: 2px solid rgb(173, 167, 136);
+        border-radius: 5px;
+    }
+
+    .ni-title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .ni-value{
+        font-size: 16px;
+    }
+    
+    .manual_background {
+        width: 80%;
+        height: 90%;
+
+        border: 8px solid rgb(173, 167, 136);
+        border-radius: 15px;
+    }   
+    
+    .manual-close-botton{  
+        width: 35px;
+        height: 35px;
+    
+        top:25px;
+        right:25px;
+    }
+    
+    .manual-content-title{
+        font-size: 24px;
+    }
+    
+    .manual-content-text {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    

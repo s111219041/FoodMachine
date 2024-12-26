@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>🎰食物拉霸機🎰</title>
+</head>
+<body>
+
+  <div class = "ID-input">
+    <div class = "overlay">
+      <div class = "ID-input-background">
+        <p> 請輸入暱稱，暱稱將顯示在排行榜上 </p>
+        <div class = "input-field">
+          <input type="text" id="username" placeholder="匿名使用者" maxlength="10">
+          <button class="ID-input-down-button">
+            <img class="buttonImage" src="LotteryButtonImage/OK.png" alt="button image">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "menu">
+    <button class="menu-button">
+      <img class = "menu-button-image" src="MenuButtomImage/01.svg"  width="300">
+    </button>
+    <div class="menu-content">
+      <div class="menu-item">
+        <a href="#">使用說明</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">排行榜</a>
+      </div>
+      <div class="menu-item">
+        <a href="https://emojikitchen.dev/" target="_blank">EmojiKitchen</a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "background_effects">
+    <div class = "background_effect">
+      <img class="background-image" src="InitialPicture/01.png"  width="300">
+    </div>
+    <div class = "background_effect">
+      <img class="background-image" src="InitialPicture/01.png"  width="300">
+    </div>
+    <div class = "background_effect">
+      <img class="background-image" src="InitialPicture/03.png"  width="300">
+    </div>
+    <div class = "background_effect">
+      <img class="background-image" src="InitialPicture/01.png"  width="300">
+    </div>
+    <div class = "background_effect">
+      <img class="background-image" src="InitialPicture/01.png"  width="300">
+    </div>
+  </div>
+
+  <div class = "slot_machine_top">
+    <div class = "top-info-content">
+      <p class = "reward-total-coin-text"> 投入10🪙開始抽獎</p>
+      <p class="current_global_spin_counter_text">0</p>
+    </div>
+  </div>
+    
+  <div class = "slot_machine">
+    <div class = "bulbs">
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+
+      <div class = bulb></div>
+      <div class = bulb></div>
+      <div class = bulb></div>
+    </div>
+
+    <div class = "slot_machine_items">
+
+      <div class="sm_item">
+        <div class="food_tags_container">
+          <p class="food-tags"></p>
+        </div>
+        <div class="food_image_container">
+          <img class="food-image" src="InitialPicture/01.png" width="300">
+        </div>
+        <div class="food_name_container">
+          <p class="food-name">食</p>
+        </div>
+      </div>
+
+      <div class="sm_item">
+        <div class="food_tags_container">
+          <p class="food-tags"></p>
+        </div>
+        <div class="food_image_container">
+          <img class="food-image" src="InitialPicture/01.png" width="300">
+        </div>
+        <div class="food_name_container">
+          <p class="food-name">物</p>
+        </div>
+      </div>
+
+      <div class="sm_item">
+        <div class="food_tags_container">
+          <p class="food-tags"></p>
+        </div>
+        <div class="food_image_container">
+          <img class="food-image" src="InitialPicture/03.png" width="300">
+        </div>
+        <div class="food_name_container">
+          <p class="food-name">拉</p>
+        </div>
+      </div>
+
+      <div class="sm_item">
+        <div class="food_tags_container">
+          <p class="food-tags"></p>
+        </div>
+        <div class="food_image_container">
+          <img class="food-image" src="InitialPicture/01.png" width="300">
+        </div>
+        <div class="food_name_container">
+          <p class="food-name">霸</p>
+        </div>
+      </div>
+
+      <div class="sm_item">
+        <div class="food_tags_container">
+          <p class="food-tags"></p>
+        </div>
+        <div class="food_image_container">
+          <img class="food-image" src="InitialPicture/01.png" width="300">
+        </div>
+        <div class="food_name_container">
+          <p class="food-name">機</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class = "slot_machine_bottom">
+    <div class="current_coin_container">
+      <p class="current-coin">000🪙</p>
+    </div>
+    <button class="Lottery-button">
+      <img class="buttonImage" src="LotteryButtonImage/Idle.png" alt="button image">
+    </button>
+  </div>
+  
+
+  <div class = "nutritional_info">
+    <div class = "ni_item">
+      <p class="ni-title">熱量🔥</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">蛋白質🍗</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">碳水化合物🍞</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">脂肪🧈</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">膳食纖維🥦</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">維生素🍊</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">礦物質🪨</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">糖🍬</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">鈉🧂</p>
+      <p class="ni-value">0</p>
+    </div>
+    <div class = "ni_item">
+      <p class="ni-title">水分💧</p>
+      <p class="ni-value">0</p>
+    </div>
+  </div>
+
+  <div class = "manual">
+    <div class = "overlay">
+      <div class = "popup-background">
+        <div class = "manual_content">
+          <p class="manual-content-title">使用說明</p>
+          <p class="manual-content-text">
+            1.營養價值以100g食物為單位計算<br>
+            2.營養價值由AI生成，僅供參考<br>
+            3.原型食物的營養價值準確度高，而加工食物因為成分組成變動大，營養價值準確度低<br>
+            4.維生素及礦物質的種類有很多，因此用分數來評估綜合的含量。<br>
+            <br>
+            金幣計算方式:<br>
+            每個食物根據其營養成分的種類多寡會獲得0-3個標籤<br>
+            5個食物獲得6個相同的標籤即可得到金幣，如:"🥦🥦🥦🥦🥦🥦"、"💧💧💧💧💧💧💧💧";<br>
+            不同種類的標籤獨立計算<br>
+
+            --獎勵表-- <br>
+            相同標籤x6 : 2🪙<br>
+            相同標籤x7 : 5🪙<br>
+            相同標籤x8 : 10🪙<br>
+            相同標籤x9 : 18🪙<br>
+            相同標籤x10: 35🪙<br>
+            相同標籤x11: 60🪙<br>
+            相同標籤x12: 150🪙<br>
+            相同標籤x13: 777🪙<br>
+            相同標籤x14: 7777🪙<br>
+            相同標籤x15: 77777🪙<br>
+          </p>
+        </div>
+        <div class = "manual-close-botton">
+            <img class="buttonImage" src="LotteryButtonImage/OK.png" alt="button image">
+        </div>
+      </div> 
+    </div> 
+  </div>
+
+  <div class = "leaderboard">
+    <div class = "overlay">
+      <div class = "popup-background">
+        <div class = "leaderboard_content">
+          <p class="leaderboard-content-title">排行榜</p>
+          <table id="leaderboardTable">
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>暱稱</th>
+                    <th>第N次的抽獎</th>
+                    <th>金幣數量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                  <tr>
+                    <td>你的最高分</td>
+                    <td>none</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        </div>
+        <div class = "leaderboard-close-botton">
+          <img class="buttonImage" src="LotteryButtonImage/OK.png" alt="button image">
+      </div>
+      </div>
+  </div>
+
+  
+
+  <script type="module" src="firebaseRealtimeDatabase.js"></script>
+  <script src="IDInputField.js"></script>
+  <script src="foodData.js"></script>
+  <script src="toolFuction.js"></script>
+  <script src="menu.js"></script>
+  <script src="bulb.js"></script>
+  <script src="manual.js"></script>
+  <script src="leaderboard.js"></script>
+  <script src="coinManager.js"></script>
+  <script src="foodTagsManager.js"></script>
+  <script src="soltMachine.js"></script>
+
+</body>
+</html>
