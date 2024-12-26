@@ -16,8 +16,8 @@ let totalNI = new NutritionalInformation(0,0,0,0,0,0,0,0,0,0); //目前營養價
 let foodLotteryInProgressCount = 0;
 
 //設定
-const totalNICounterDuration = 2000;
-const foodLotteryDuration = 2100; //3500
+const totalNICounterDuration = 1500;
+const foodLotteryDuration = 3000; //3500
 
 
 //初始化FoodItem
